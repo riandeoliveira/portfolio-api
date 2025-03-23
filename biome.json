@@ -1,0 +1,43 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": {
+    "ignore": ["dist", "node_modules"],
+    "ignoreUnknown": false
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "complexity": {
+        "noUselessStringConcat": "warn",
+        "noUselessUndefinedInitialization": "warn",
+        "noVoid": "warn"
+      },
+      "correctness": {
+        "noUndeclaredVariables": "warn",
+        "noUnusedVariables": "off"
+      },
+      "nursery": {
+        "useExplicitType": "warn"
+      },
+      "recommended": true,
+      "suspicious": {
+        "noConsole": "warn",
+        "noEmptyBlockStatements": "warn",
+        "useAwait": "warn"
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "vcs": {
+    "clientKind": "git",
+    "enabled": false,
+    "useIgnoreFile": false
+  }
+}

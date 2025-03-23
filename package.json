@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-api",
+  "version": "1.0.0",
+  "displayName": "",
+  "main": "./src/main.ts",
+  "scripts": {
+    "build": "tsc",
+    "check": "biome check --write",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/nodejs": "^5.0.2",
+    "@fastify/cors": "^11.0.0",
+    "@fastify/rate-limit": "^10.2.2",
+    "axios": "^1.8.3",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.13.10",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
