@@ -1,17 +1,20 @@
 {
   "name": "portfolio-api",
+  "description": "The API of my personal portfolio, responsible for fetching project data in real-time and acting as an intermediary for sending emails.",
   "version": "1.0.0",
-  "displayName": "",
+  "license": "MIT",
+  "private": true,
   "main": "./src/main.ts",
+  "author": {
+    "name": "Rian Dias de Oliveira",
+    "email": "riandiasdeoliveira2001@gmail.com"
+  },
   "scripts": {
     "build": "tsc",
     "check": "biome check --write",
     "dev": "cross-env NODE_ENV=development nodemon ./src/main.ts",
     "start": "cross-env NODE_ENV=production node ./dist/main.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@emailjs/nodejs": "^5.0.2",
     "@fastify/cors": "^11.0.0",
