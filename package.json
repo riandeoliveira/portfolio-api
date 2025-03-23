@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "check": "biome check --write",
-    "dev": "cross-env NODE_ENV=development nodemon ./src/main.ts"
+    "dev": "cross-env NODE_ENV=development nodemon ./src/main.ts",
+    "start": "cross-env NODE_ENV=production node ./dist/main.js"
   },
   "keywords": [],
   "author": "",
