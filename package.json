@@ -1,7 +1,7 @@
 {
   "name": "portfolio-api",
   "description": "The API of my personal portfolio, responsible for fetching project data in real-time and acting as an intermediary for sending emails.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "private": true,
   "main": "./src/main.ts",
