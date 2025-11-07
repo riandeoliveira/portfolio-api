@@ -1,0 +1,17 @@
+services:
+  portfolio-redis:
+    image: redis:latest
+    container_name: portfolio-redis
+    restart: unless-stopped
+    command: ["redis-server", "--requirepass", "${REDIS_PASSWORD}"]
+    ports:
+      - "${REDIS_PORT}:6379"
+
+  portfolio-api:
+    build: .
+    container_name: portfolio-api
+    restart: unless-stopped
+    depends_on:
+      - portfolio-redis
+    ports:
+      - "${APP_PORT}:3000"

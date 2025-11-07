@@ -1,35 +1,29 @@
 {
   "name": "portfolio-api",
-  "description": "The API of my personal portfolio, responsible for fetching project data in real-time and acting as an intermediary for sending emails.",
-  "version": "1.0.2",
-  "license": "MIT",
+  "version": "1.1.0",
   "private": true,
-  "main": "./src/main.ts",
-  "author": {
-    "name": "Rian Dias de Oliveira",
-    "email": "riandiasdeoliveira2001@gmail.com"
-  },
   "scripts": {
     "build": "tsc",
     "check": "biome check --write",
-    "dev": "cross-env NODE_ENV=development nodemon ./src/main.ts",
-    "start": "cross-env NODE_ENV=production node ./dist/main.js"
+    "dev": "tsx src/main.ts",
+    "start": "node dist/main.js"
   },
   "dependencies": {
-    "@emailjs/nodejs": "^5.0.2",
-    "@fastify/cors": "^11.0.0",
-    "@fastify/rate-limit": "^10.2.2",
-    "axios": "^1.8.3",
-    "dotenv": "^16.4.7",
-    "fastify": "^5.2.1",
-    "zod": "^3.24.2"
+    "@fastify/cors": "^11.1.0",
+    "@fastify/redis": "^7.1.0",
+    "axios": "^1.13.1",
+    "dotenv": "^17.2.2",
+    "fastify": "^5.6.1",
+    "nodemailer": "^7.0.10",
+    "sanitize-html": "^2.17.0",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/node": "^22.13.10",
-    "cross-env": "^7.0.3",
-    "nodemon": "^3.1.9",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.2"
+    "@biomejs/biome": "^2.3.1",
+    "@types/node": "^24.9.1",
+    "@types/nodemailer": "^7.0.3",
+    "@types/sanitize-html": "^2.16.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
   }
 }

@@ -3,8 +3,7 @@
     "biomejs.biome",
     "eamodio.gitlens",
     "fill-labs.dependi",
-    "visualstudioexptteam.vscodeintellicode",
-    "wayou.vscode-todo-highlight",
-    "wix.vscode-import-cost"
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "streetsidesoftware.code-spell-checker"
   ]
 }

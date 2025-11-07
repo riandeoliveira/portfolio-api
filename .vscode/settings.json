@@ -1,96 +1,50 @@
 {
   //
+  // Biome (Extension)
+  //
+  "biome.suggestInstallingGlobally": false,
+
+  //
   // Code Spell Checker (Extension)
   //
   "cSpell.language": "en,pt",
+
+  //
+  // Color Highlight (Extension)
+  //
+  "color-highlight.matchWords": true,
+
   //
   // Diff Editor
   //
   "diffEditor.ignoreTrimWhitespace": true,
+
   //
   // Editor
   //
   "editor.codeActionsOnSave": {
-    "source.fixAll.biome": "explicit",
-    "source.organizeImports.biome": "explicit",
-    "source.removeUnusedImports": "explicit"
+   "source.fixAll.biome": "explicit",
+   "source.organizeImports.biome": "explicit",
+   "source.removeUnusedImports": "explicit"
   },
   "editor.defaultFormatter": "biomejs.biome",
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
-  "editor.linkedEditing": true,
   "editor.tabSize": 2,
-  "editor.wordWrap": "on",
+
   //
   // Files
   //
-  "files.autoGuessEncoding": true,
-  "files.autoSave": "afterDelay",
+  "files.eol": "\n",
   "files.exclude": {
-    "**/.git": false
+   "**/.git": false
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": false,
+  "files.trimTrailingWhitespace": true,
+
   //
   // Git
   //
-  "git.allowNoVerifyCommit": false,
-  "git.confirmEmptyCommits": false,
-  "git.enableSmartCommit": true,
-  "git.showPushSuccessNotification": true,
-  "git.supportCancellation": true,
-  //
-  // JavaScript
-  //
-  "javascript.suggest.completeFunctionCalls": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  //
-  // TODO Highlight (Extension)
-  //
-  "todohighlight.keywords": [
-    {
-      "backgroundColor": "#FF6D00",
-      "borderRadius": "4px",
-      "color": "#fff",
-      "text": "BUG:"
-    },
-    {
-      "backgroundColor": "#00C853",
-      "borderRadius": "4px",
-      "color": "#fff",
-      "text": "FEAT:"
-    },
-    {
-      "borderRadius": "4px",
-      "text": "FIXME:"
-    },
-    {
-      "backgroundColor": "#D50000",
-      "borderRadius": "4px",
-      "color": "#fff",
-      "text": "HOTFIX:"
-    },
-    {
-      "backgroundColor": "#2962FF",
-      "borderRadius": "4px",
-      "color": "#fff",
-      "text": "NOTE:"
-    },
-    {
-      "backgroundColor": "#00BFA5",
-      "borderRadius": "4px",
-      "color": "#fff",
-      "text": "REFACT:"
-    },
-    {
-      "borderRadius": "4px",
-      "text": "TODO:"
-    }
-  ],
-  //
-  // TypeScript
-  //
-  "typescript.suggest.completeFunctionCalls": true,
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "git.enableSmartCommit": true
 }
